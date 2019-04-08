@@ -15,3 +15,7 @@ spring:
         prefer-ip-address: true
         instance-id: ${spring.application.name}:${server.port}
 
+logging:
+  level:
+    com:
+      worstezreal: debug

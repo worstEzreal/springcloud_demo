@@ -1,6 +1,5 @@
-package com.worstezreal.sprngcloudfeign.service;
+package com.worstezreal.service;
 
-import com.worstezreal.service.HelloService;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

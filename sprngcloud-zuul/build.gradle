@@ -1,8 +1,4 @@
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.cloud:spring-cloud-starter-consul-discovery'
+	implementation project(':springcloud-base')
 	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-zuul'
-	implementation 'com.alibaba:fastjson:1.2.42'
-	compileOnly 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

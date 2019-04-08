@@ -1,4 +1,4 @@
-package com.worstezreal.sprngcloudfeign.service;
+package com.worstezreal.service;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 

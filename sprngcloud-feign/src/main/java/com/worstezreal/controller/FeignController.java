@@ -1,7 +1,8 @@
-package com.worstezreal.sprngcloudfeign.controller;
+package com.worstezreal.controller;
 
-import com.worstezreal.sprngcloudfeign.service.IHelloService;
-import com.worstezreal.sprngcloudfeign.service.IHelloService2;
+import com.worstezreal.entity.Result;
+import com.worstezreal.service.IHelloService;
+import com.worstezreal.service.IHelloService2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,7 +29,7 @@ public class FeignController {
 
 
     @RequestMapping("/hello2")
-    public String feignHello2() {
+    public Result feignHello2() {
         return helloService2.hello();
     }
 

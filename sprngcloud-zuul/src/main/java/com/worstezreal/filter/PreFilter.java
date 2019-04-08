@@ -1,4 +1,4 @@
-package com.worstezreal.sprngcloudzuul.filter;
+package com.worstezreal.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Slf4j
 @Component
-public class LogFilter extends ZuulFilter {
+public class PreFilter extends ZuulFilter {
     @Override
     public String filterType() {
         return FilterConstants.PRE_TYPE;

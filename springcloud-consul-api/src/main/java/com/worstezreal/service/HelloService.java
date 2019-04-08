@@ -1,5 +1,6 @@
 package com.worstezreal.service;
 
+import com.worstezreal.entity.Result;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -13,6 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface HelloService {
 
     @RequestMapping("/hello")
-    String hello();
+    Result hello();
 
 }

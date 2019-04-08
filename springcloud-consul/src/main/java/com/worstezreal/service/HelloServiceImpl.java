@@ -1,5 +1,6 @@
 package com.worstezreal.service;
 
+import com.worstezreal.entity.Result;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloServiceImpl implements HelloService {
 
     @Override
-    public String hello() {
-        return "hello feign service provider";
+    public Result hello() {
+        return new Result(0, "hello feign service provider");
     }
 }

@@ -1,4 +1,4 @@
-package com.worstezreal.sprngcloudzuul;
+package com.worstezreal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

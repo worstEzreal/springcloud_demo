@@ -1,5 +1,6 @@
 package com.worstezreal;
 
+import com.worstezreal.entity.Result;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -18,8 +19,8 @@ public class SpringcloudConsulApplication {
     static class TestController {
 
         @RequestMapping("/hello")
-        public String hello() {
-            return "hello world";
+        public Result hello() {
+            return new Result(0, "hello world");
         }
 
     }

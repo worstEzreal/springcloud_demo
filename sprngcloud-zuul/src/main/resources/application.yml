@@ -22,3 +22,8 @@ zuul:
     sc-feign:
       path: /feign/**
       service-id: sc-feign
+
+logging:
+  level:
+    com:
+      worstezreal: debug
