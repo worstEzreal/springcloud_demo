@@ -1,0 +1,24 @@
+server:
+  port: 8511
+
+spring:
+  application:
+    name: sc-zuul
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: sc-zuul
+        health-check-path: /hello
+        prefer-ip-address: true
+        instance-id: ${spring.application.name}:${server.port}
+
+zuul:
+  routes:
+    sc-consul:
+      path: /consul/**
+      service-id: sc-consul
+    sc-feign:
+      path: /feign/**
+      service-id: sc-feign

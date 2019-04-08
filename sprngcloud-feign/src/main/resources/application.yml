@@ -1,0 +1,17 @@
+server:
+  port: 8521
+
+spring:
+  application:
+    name: sc-feign
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        ##对应zuul的service-id
+        service-name: sc-feign
+        health-check-path: /hello
+        prefer-ip-address: true
+        instance-id: ${spring.application.name}:${server.port}
+

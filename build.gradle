@@ -1,0 +1,48 @@
+buildscript {
+    ext {
+        springBootPluginVersion = '2.1.4.RELEASE'
+        dependencyMgrPluginVersion = '1.0.4.RELEASE'
+    }
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath("io.spring.gradle:dependency-management-plugin:${dependencyMgrPluginVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootPluginVersion}")
+    }
+}
+
+subprojects {
+
+    apply plugin: 'io.spring.dependency-management'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'java'
+
+    group = 'com.worstEzreal'
+    version = '0.0.1-SNAPSHOT'
+
+    compileJava {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        mavenCentral()
+    }
+
+    ext {
+        springCloudVersion = 'Greenwich.SR1'
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+        }
+    }
+
+}
+
