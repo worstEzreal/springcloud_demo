@@ -1,6 +1,10 @@
 server:
   port: 8501
 
+app:
+  id: sc-consul
+apollo:
+  meta: http://localhost:8080
 
 spring:
   application:

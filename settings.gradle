@@ -1,6 +1,6 @@
 rootProject.name = 'springcloud'
 include 'springcloud-consul'
 include 'springcloud-consul-api'
-include 'sprngcloud-feign'
-include 'sprngcloud-zuul'
+include 'springcloud-feign'
+include 'springcloud-zuul'
 include 'springcloud-base'

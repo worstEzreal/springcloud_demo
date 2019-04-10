@@ -1,6 +1,7 @@
 dependencies {
     implementation project(':springcloud-consul-api')
     implementation project(':springcloud-base')
+    implementation 'com.ctrip.framework.apollo:apollo-client:1.0.0'
 }
 
 

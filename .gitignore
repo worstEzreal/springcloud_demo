@@ -1,6 +1,6 @@
 HELP.md
 .gradle
-/build/
+*/build/
 !gradle/wrapper/gradle-wrapper.jar
 
 ### STS ###
@@ -17,7 +17,12 @@ HELP.md
 *.iws
 *.iml
 *.ipr
-/out/
+*/out/
+springcloud-base/out/
+springcloud-consul/out/
+springcloud-consul-api/out/
+sprngcloud-feign/out/
+sprngcloud-zuul/out/
 
 ### NetBeans ###
 /nbproject/private/
